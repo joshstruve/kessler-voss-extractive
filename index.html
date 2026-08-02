@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Kessler-Voss Extractive // Tomorrow, Extracted.</title>
+    <meta name="description"
+        content="Kessler-Voss Extractive operates lunar surface mining, water ice harvesting, and sintering refineries in cislunar space.">
+    <meta name="keywords"
+        content="Kessler-Voss, lunar mining, regolith extraction, cislunar space, helium-3, off-world resources">
+    <meta name="author" content="Kessler-Voss Extractive">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#131316">
+    <link rel="canonical" href="https://kessler-voss.com/">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kessler-voss.com/">
+    <meta property="og:site_name" content="Kessler-Voss Extractive">
+    <meta property="og:title" content="Kessler-Voss Extractive // Tomorrow, Extracted.">
+    <meta property="og:description"
+        content="Kessler-Voss Extractive operates lunar surface mining, water ice harvesting, and sintering refineries in cislunar space.">
+    <meta property="og:image" content="https://kessler-voss.com/assets/hero-background.webp">
+    <meta property="og:image:alt" content="Lunar surface with Earth visible in space - Kessler-Voss Operations">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kessler-Voss Extractive // Tomorrow, Extracted.">
+    <meta name="twitter:description"
+        content="Kessler-Voss Extractive operates lunar surface mining, water ice harvesting, and sintering refineries in cislunar space.">
+    <meta name="twitter:image" content="https://kessler-voss.com/assets/hero-background.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="/assets/hero-background.webp" fetchpriority="high">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;family=Orbitron:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;family=Orbitron:wght@400;500;600;700;800;900&amp;display=swap"
+            rel="stylesheet">
+    </noscript>
+</head>
+
+<body
+    class="bg-background text-on-background font-body-content min-h-screen overflow-x-hidden selection:bg-secondary selection:text-on-secondary relative">
+    <header
+        class="bg-surface-container-high/80 backdrop-blur-md border-b border-void-black sticky top-0 z-50 shadow-lg">
+        <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6">
+            <div class="flex items-center gap-4">
+                <a href="#home"
+                    class="font-header text-xl md:text-2xl font-bold tracking-[0.2em] text-on-surface focus:outline-none focus-visible:ring-2 focus-visible:ring-ice-blue">KESSLER-VOSS</a>
+            </div>
+            <nav aria-label="Primary Navigation" class="hidden lg:flex gap-8">
+                <a class="font-mono-tech text-xs text-on-surface-variant font-medium hover:text-ice-blue transition-colors duration-200 uppercase tracking-wider"
+                    href="#mission">MISSION</a>
+                <a class="font-mono-tech text-xs text-on-surface-variant font-medium hover:text-ice-blue transition-colors duration-200 uppercase tracking-wider"
+                    href="#resources">RESOURCES</a>
+                <a class="font-mono-tech text-xs text-on-surface-variant font-medium hover:text-ice-blue transition-colors duration-200 uppercase tracking-wider"
+                    href="#operations">OPERATIONS</a>
+                <a class="font-mono-tech text-xs text-on-surface-variant font-medium hover:text-ice-blue transition-colors duration-200 uppercase tracking-wider"
+                    href="#careers">CAREERS</a>
+                <a class="font-mono-tech text-xs text-on-surface-variant font-medium hover:text-ice-blue transition-colors duration-200 uppercase tracking-wider"
+                    href="#sustainability">Safety</a>
+                <a class="font-mono-tech text-xs text-on-surface-variant font-medium hover:text-ice-blue transition-colors duration-200 uppercase tracking-wider"
+                    href="#contact">CONTACT</a>
+            </nav>
+            <button id="mobile-menu-toggle" type="button"
+                class="lg:hidden text-on-surface hover:text-ice-blue focus:outline-none p-2" aria-expanded="false"
+                aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+        <nav id="mobile-menu" aria-label="Mobile Navigation"
+            class="hidden lg:hidden flex-col gap-4 px-margin-mobile pb-6 pt-2 bg-surface-container-high border-b border-void-black">
+            <a class="font-mono-tech text-sm text-on-surface-variant font-medium hover:text-ice-blue py-2 uppercase tracking-wider border-b border-outline-variant/20"
+                href="#mission">MISSION</a>
+            <a class="font-mono-tech text-sm text-on-surface-variant font-medium hover:text-ice-blue py-2 uppercase tracking-wider border-b border-outline-variant/20"
+                href="#resources">RESOURCES</a>
+            <a class="font-mono-tech text-sm text-on-surface-variant font-medium hover:text-ice-blue py-2 uppercase tracking-wider border-b border-outline-variant/20"
+                href="#operations">OPERATIONS</a>
+            <a class="font-mono-tech text-sm text-on-surface-variant font-medium hover:text-ice-blue py-2 uppercase tracking-wider border-b border-outline-variant/20"
+                href="#careers">CAREERS</a>
+            <a class="font-mono-tech text-sm text-on-surface-variant font-medium hover:text-ice-blue py-2 uppercase tracking-wider border-b border-outline-variant/20"
+                href="#sustainability">Safety</a>
+            <a class="font-mono-tech text-sm text-on-surface-variant font-medium hover:text-ice-blue py-2 uppercase tracking-wider"
+                href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <main class="w-full overflow-hidden">
+        <!-- Hero Section -->
+        <section
+            class="relative min-h-[921px] flex flex-col justify-center py-24 border-b border-void-black overflow-hidden bg-surface"
+            id="home">
+            <div class="fixed inset-0 z-0 pointer-events-none"><img alt="Lunar surface with Earth visible in space"
+                    class="w-full h-full object-cover opacity-40 grayscale" fetchpriority="high" width="1448"
+                    height="1086" src="/assets/hero-background.webp">
+                <div class="absolute inset-0 bg-background/70"></div>
+            </div>
+            <div class="relative z-10 max-w-container-max mx-auto w-full px-margin-mobile md:px-margin-desktop">
+                <div class="max-w-4xl">
+                    <div class="font-mono-tech text-xs text-ice-blue uppercase mb-4 tracking-widest">Now Extracting
+                        Tomorrow
+                    </div>
+                    <h1 class="font-header text-4xl md:text-7xl text-on-surface mb-6 uppercase leading-tight decode-text"
+                        data-decode-type="heading" style="font-weight: 450;">The moon was just sitting there.</h1>
+                    <p
+                        class="font-body-content text-lg text-on-surface-variant mb-10 max-w-3xl border-l-2 border-ice-blue pl-6 leading-relaxed">
+                        Eleven years ago, Kessler-Voss Extractive looked at 3.8 billion years of undisturbed lunar
+                        regolith and asked the only reasonable question: what's it worth. Today we run three active
+                        sites, process fourteen thousand tons of material a day, and supply the elements your
+                        grandchildren's reactors will run on.</p>
+                    <div class="flex flex-col sm:flex-row gap-4"><a
+                            class="bg-ice-blue text-void-black font-mono-tech text-sm px-8 py-4 uppercase font-bold hover:bg-white hover:shadow-[0_0_20px_rgba(178,242,250,0.6)] transition-all duration-300 flex items-center justify-center gap-2"
+                            href="#mission">View our mission<span class="material-symbols-outlined text-[16px]"
+                                aria-hidden="true">arrow_forward</span></a><a
+                            class="border-2 border-sulfur-glow text-sulfur-glow font-mono-tech text-sm px-8 py-4 uppercase font-bold hover:bg-sulfur-glow hover:text-void-black hover:shadow-[0_0_20px_rgba(255,251,189,0.4)] transition-all duration-300 flex items-center justify-center"
+                            href="#careers">Careers at KVE</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section
+            class="relative py-24 border-b border-void-black reveal overflow-hidden bg-surface-container-low active"
+            id="mission">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                    <div class="lg:col-span-6 flex flex-col justify-center">
+                        <div class="font-mono-tech text-xs text-ice-blue uppercase mb-4 tracking-widest">MISSION</div>
+                        <h2 class="font-header text-3xl md:text-4xl text-on-surface mb-8 uppercase decode-text"
+                            data-decode-type="heading" style="font-weight: 450;">We don't explore the moon. We process
+                            it.</h2>
+                        <div class="space-y-6 font-body-content text-base text-on-surface-variant leading-relaxed">
+                            <p class="">Exploration was the twentieth century's approach to the moon. Ours is extraction
+                                at scale. Kessler-Voss operates the largest off-world industrial footprint in cislunar
+                                space — three surface sites, one polar harvesting operation, and a processing capacity
+                                that outstrips every other lunar concern combined. We are not interested in flags. We
+                                are interested in yield.</p>
+                            <p class="">Our extraction stack begins with autonomous mass-driver rovers that strip and
+                                sort regolith by density and mineral content before it ever reaches a human hand.
+                                Thermal volatile extraction units bake water ice and trapped gases out of polar shadow
+                                material at controlled sub-zero gradients, while our sintering refineries convert raw
+                                regolith into structural-grade metal stock on-site.</p>
+                            <p class="">None of this is without risk. We've said so publicly, and we'll say it again
+                                here: lunar extraction at this scale has no precedent. We proceed anyway, because
+                                someone was always going to, and we intend for it to be us.</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 flex flex-col justify-center">
+                        <div class="mt-8"><img alt="Regolith Excavator operating on lunar terrain"
+                                class="w-full h-auto grayscale tech-border" loading="lazy" width="512" height="512"
+                                src="/assets/regolith-excavator.webp">
+                        </div>
+                    </div>
+                    <div class="lg:col-span-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+                        <div class="card-container border border-outline-variant/30">
+                            <div class="card-inner relative p-8 flex flex-col items-center justify-center text-center">
+                                <div
+                                    class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div class="text-4xl md:text-5xl font-header text-sulfur-glow mb-2 font-bold">14,000
+                                </div>
+                                <div
+                                    class="font-mono-tech text-[10px] uppercase tracking-widest font-bold text-ice-blue">
+                                    Metric tons processed daily</div>
+                            </div>
+                        </div>
+                        <div class="card-container border border-outline-variant/30">
+                            <div class="card-inner relative p-8 flex flex-col items-center justify-center text-center">
+                                <div
+                                    class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div class="text-4xl md:text-5xl font-header text-sulfur-glow mb-2 font-bold">3</div>
+                                <div
+                                    class="font-mono-tech text-[10px] uppercase tracking-widest font-bold text-ice-blue">
+                                    Active extraction sites</div>
+                            </div>
+                        </div>
+                        <div class="card-container border border-outline-variant/30">
+                            <div class="card-inner relative p-8 flex flex-col items-center justify-center text-center">
+                                <div
+                                    class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div class="text-4xl md:text-5xl font-header text-sulfur-glow mb-2 font-bold">91%</div>
+                                <div
+                                    class="font-mono-tech text-[10px] uppercase tracking-widest font-bold text-ice-blue">
+                                    Fully autonomous extraction</div>
+                            </div>
+                        </div>
+                        <div class="card-container border border-outline-variant/30">
+                            <div class="card-inner relative p-8 flex flex-col items-center justify-center text-center">
+                                <div
+                                    class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div class="text-4xl md:text-5xl font-header text-sulfur-glow mb-2 font-bold">340</div>
+                                <div
+                                    class="font-mono-tech text-[10px] uppercase tracking-widest font-bold text-ice-blue">
+                                    Personnel stationed off-world</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="relative py-24 border-b border-void-black reveal overflow-hidden bg-surface active"
+            id="resources">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="mb-12 relative z-10">
+                    <div class="font-mono-tech text-xs text-ice-blue uppercase mb-4 tracking-widest">RESOURCES</div>
+                    <h2 class="font-header text-3xl md:text-4xl text-on-surface uppercase mb-8 decode-text"
+                        data-decode-type="heading" style="font-weight: 450;">What we bring home</h2>
+                    <p class="font-body-content text-lg text-on-surface-variant max-w-2xl">Five product lines. One
+                        supply chain that doesn't depend on anything still in the ground on Earth.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+                    <div
+                        class="card-container group border border-outline-variant/30 md:col-span-1 md:row-span-2 transition-all duration-300">
+                        <div class="card-inner relative p-8 flex flex-col">
+                            <div
+                                class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                            </div>
+                            <div class="mb-6 flex justify-between items-start"><span
+                                    class="material-symbols-outlined text-ice-blue text-4xl"
+                                    aria-hidden="true">energy_savings_leaf</span><span
+                                    class="font-mono-tech text-[10px] text-sulfur-glow border border-sulfur-glow px-2 py-0.5">RESOURCE_H3_PRIME</span>
+                            </div>
+                            <h3 class="font-header text-xl text-on-surface uppercase mb-2 decode-text"
+                                data-decode-type="heading" style="font-weight: 450;">Helium-3</h3>
+                            <p class="font-body-content text-sm text-ice-blue mb-6">The fuel of the next century,
+                                mined from soil that's been waiting three billion years.</p>
+                            <div class="mb-6 overflow-hidden border border-outline-variant/30"><img
+                                    alt="Helium-3 Extraction Canister"
+                                    class="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                    loading="lazy" width="1254" height="1254" src="/assets/helium3-cannister.webp">
+                            </div>
+                            <p class="font-body-content text-sm text-on-surface-variant leading-relaxed">Deposited by
+                                billions of years of uninterrupted solar wind, lunar helium-3 exists in concentrations
+                                found nowhere on Earth.</p>
+                        </div>
+                    </div>
+                    <div class="card-container group border border-outline-variant/30 transition-all duration-300">
+                        <div class="card-inner relative p-8 flex flex-col">
+                            <div
+                                class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                            </div>
+                            <div class="mb-6 flex justify-between items-start"><span
+                                    class="material-symbols-outlined text-ice-blue text-4xl"
+                                    aria-hidden="true">memory</span><span
+                                    class="font-mono-tech text-[10px] text-on-surface-variant tracking-widest uppercase">CAT:REE_EXTRACT</span>
+                            </div>
+                            <h3 class="font-header text-xl text-on-surface uppercase mb-2 decode-text"
+                                data-decode-type="heading" style="font-weight: 450;">Rare earth elements</h3>
+                            <p class="font-body-content text-sm text-ice-blue mb-6">Neodymium, dysprosium, yttrium —
+                                the elements every motor is quietly running out of.</p>
+                            <p class="font-body-content text-sm text-on-surface-variant leading-relaxed">Lunar regolith
+                                carries rare earth concentrations well above typical terrestrial ore grades.</p>
+                        </div>
+                    </div>
+                    <div class="card-container group border border-outline-variant/30 transition-all duration-300">
+                        <div class="card-inner relative p-8 flex flex-col">
+                            <div
+                                class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                            </div>
+                            <div class="mb-6 flex justify-between items-start"><span
+                                    class="material-symbols-outlined text-ice-blue text-4xl"
+                                    aria-hidden="true">water_drop</span><span
+                                    class="font-mono-tech text-[10px] text-on-surface-variant tracking-widest uppercase">CAT:POLAR_VOLATILES</span>
+                            </div>
+                            <h3 class="font-header text-xl text-on-surface uppercase mb-2 decode-text"
+                                data-decode-type="heading" style="font-weight: 450;">Water ice &amp; oxygen</h3>
+                            <p class="font-body-content text-sm text-ice-blue mb-6">Harvested from craters that
+                                haven't seen sunlight in two billion years.</p>
+                            <p class="font-body-content text-sm text-on-surface-variant leading-relaxed">Our Shackleton
+                                Ridge station harvests permanently shadowed ice for potable water.</p>
+                        </div>
+                    </div>
+                    <div class="card-container group border border-outline-variant/30 transition-all duration-300">
+                        <div class="card-inner relative p-8 flex flex-col">
+                            <div
+                                class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                            </div>
+                            <div class="mb-6 flex justify-between items-start"><span
+                                    class="material-symbols-outlined text-ice-blue text-4xl"
+                                    aria-hidden="true">precision_manufacturing</span><span
+                                    class="font-mono-tech text-[10px] text-on-surface-variant tracking-widest uppercase">CAT:METAL_STOCK</span>
+                            </div>
+                            <h3 class="font-header text-xl text-on-surface uppercase mb-2 decode-text"
+                                data-decode-type="heading" style="font-weight: 450;">Structural metals</h3>
+                            <p class="font-body-content text-sm text-ice-blue mb-6">Titanium, aluminum, and iron,
+                                refined where they're mined.</p>
+                            <p class="font-body-content text-sm text-on-surface-variant leading-relaxed">Our refineries
+                                turn raw regolith into construction-grade metal stock on-site.</p>
+                        </div>
+                    </div>
+                    <div class="card-container group border border-outline-variant/30 transition-all duration-300">
+                        <div class="card-inner relative p-8 flex flex-col">
+                            <div
+                                class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                            </div>
+                            <div class="mb-6 flex justify-between items-start"><span
+                                    class="material-symbols-outlined text-ice-blue text-4xl"
+                                    aria-hidden="true">diamond</span><span
+                                    class="font-mono-tech text-[10px] text-on-surface-variant tracking-widest uppercase">CAT:PGM_CORE</span>
+                            </div>
+                            <h3 class="font-header text-xl text-on-surface uppercase mb-2 decode-text"
+                                data-decode-type="heading" style="font-weight: 450;">Platinum metals</h3>
+                            <p class="font-body-content text-sm text-ice-blue mb-6">Platinum, palladium, and iridium
+                                at historic concentrations.</p>
+                            <p class="font-body-content text-sm text-on-surface-variant leading-relaxed">Critical to
+                                electronics and next-generation propulsion — extracted and certified.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Operations Section -->
+        <section
+            class="relative py-24 border-b border-void-black reveal overflow-hidden bg-surface-container-low active"
+            id="operations">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="relative z-10">
+                    <div class="font-mono-tech text-xs text-ice-blue uppercase mb-4 tracking-widest">OPERATIONS</div>
+                    <h2 class="font-header text-3xl md:text-4xl text-on-surface uppercase mb-8 decode-text"
+                        data-decode-type="heading" style="font-weight: 450;">Three sites. One direction: down.</h2>
+                    <p class="font-body-content text-lg text-on-surface-variant mb-12 max-w-2xl">Every KVE facility is
+                        purpose-built for a specific deposit, not a flag-planting exercise.</p>
+                    <div class="space-y-6">
+                        <div class="card-container border border-outline-variant/30">
+                            <div
+                                class="card-inner relative p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                                <div
+                                    class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div class="flex flex-col gap-8 w-full">
+                                    <div class="flex-1">
+                                        <div class="flex items-center gap-4 mb-2"><span
+                                                class="font-mono-tech text-[10px] text-ice-blue uppercase tracking-widest">ID:
+                                                TB-ALPHA-REF01</span><span
+                                                class="bg-ice-blue text-void-black text-[10px] font-bold px-2 py-0.5 font-mono-tech tracking-wider">FLAGSHIP</span>
+                                        </div>
+                                        <h3 class="font-header text-xl md:text-2xl text-on-surface uppercase font-bold mb-2 decode-text"
+                                            data-decode-type="heading" style="font-weight: 450;">Tranquility Basin
+                                            Processing Complex</h3>
+                                        <p class="font-body-content text-sm text-on-surface-variant max-w-3xl">Our
+                                            primary refinery and the largest single processing facility off-world.</p>
+                                    </div>
+                                    <div
+                                        class="w-full h-48 md:h-80 overflow-hidden border border-outline-variant/30 shrink-0">
+                                        <img alt="Tranquility Basin Processing Complex refinery facility"
+                                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                            loading="lazy" width="1672" height="941"
+                                            src="/assets/tranquility-basin.webp">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container border border-outline-variant/30">
+                            <div
+                                class="card-inner relative p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                                <div
+                                    class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div class="flex flex-col gap-8 w-full">
+                                    <div class="flex-1">
+                                        <div class="mb-2"><span
+                                                class="font-mono-tech text-[10px] text-ice-blue uppercase tracking-widest">ID:
+                                                SHK-SOUTH-ICE04</span></div>
+                                        <h3 class="font-header text-xl md:text-2xl text-on-surface uppercase font-bold mb-2 decode-text"
+                                            data-decode-type="heading" style="font-weight: 450;">Shackleton Ridge Polar
+                                            Station</h3>
+                                        <p class="font-body-content text-sm text-on-surface-variant max-w-3xl">
+                                            Positioned at the lunar south pole to access permanently shadowed craters.
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="w-full h-48 md:h-80 overflow-hidden border border-outline-variant/30 shrink-0">
+                                        <img alt="Shackleton Ridge Polar Station harvesting facility"
+                                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                            loading="lazy" width="1672" height="941"
+                                            src="/assets/shackleton-ridge.webp">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container border border-outline-variant/30">
+                            <div
+                                class="card-inner relative p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                                <div
+                                    class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div class="flex flex-col gap-8 w-full">
+                                    <div class="flex-1">
+                                        <div class="flex items-center gap-4 mb-2"><span
+                                                class="font-mono-tech text-[10px] text-ice-blue uppercase tracking-widest">ID:
+                                                OS-BETA-FWD03</span><span
+                                                class="bg-sulfur-glow text-void-black text-[10px] font-bold px-2 py-0.5 font-mono-tech tracking-wider">EXPANSION</span>
+                                        </div>
+                                        <h3 class="font-header text-xl md:text-2xl text-on-surface uppercase font-bold mb-2 decode-text"
+                                            data-decode-type="heading" style="font-weight: 450;">Ocean of Storms Forward
+                                            Base</h3>
+                                        <p class="font-body-content text-sm text-on-surface-variant max-w-3xl">
+                                            Exploratory drilling and early-stage site assessment. Smaller crew, longer
+                                            shifts, and the first facility slated for full autonomous handoff.</p>
+                                    </div>
+                                    <div
+                                        class="w-full h-48 md:h-80 overflow-hidden border border-outline-variant/30 shrink-0">
+                                        <img alt="Ocean of Storms Forward Base exploration habitat"
+                                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                            loading="lazy" width="1672" height="941" src="/assets/ocean-of-storms.webp">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spotlight Area -->
+        <section class="py-24 border-b border-void-black bg-surface relative overflow-hidden" id="spotlight">
+            <div class="absolute inset-0 opacity-5 pointer-events-none"
+                style="background-image: radial-gradient(circle, #b2f2fa 1px, transparent 1px); background-size: 40px 40px;">
+            </div>
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+                <h2 class="visually-hidden">Field Transmission Spotlight</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-3 flex flex-col gap-8">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-sulfur-glow">
+                                <span class="w-2 h-2 bg-sulfur-glow animate-pulse rounded-full"
+                                    aria-hidden="true"></span>
+                                <span class="font-mono-tech text-[10px] tracking-[0.3em] uppercase font-bold">UPLINK
+                                    DECRYPTED</span>
+                            </div>
+                            <div class="font-mono-tech text-ice-blue/40 text-[9px] tracking-widest">TIMESTAMP:
+                                [2084.244.12:00]</div>
+                        </div>
+                        <div
+                            class="p-6 border border-outline-variant/30 bg-surface-container-lowest/40 backdrop-blur-sm relative">
+                            <div class="absolute -top-1 -left-1 w-3 h-3 border-t border-l border-sulfur-glow"
+                                aria-hidden="true"></div>
+                            <div class="font-mono-tech text-[10px] text-ice-blue/40 uppercase mb-2">&gt; SENDER_ID</div>
+                            <div class="font-header text-lg text-sulfur-glow font-bold tracking-wider"
+                                style="font-weight: 450;">M-ALDENH</div>
+                            <div class="font-mono-tech text-[10px] text-on-surface-variant mt-1">EXTRACTION ENGINEER
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-outline-variant/30">
+                                <div class="font-mono-tech text-[10px] text-ice-blue/40 uppercase mb-1">AUTH_LEVEL</div>
+                                <div class="text-ice-blue font-bold font-mono-tech animate-smooth-pulse">[ 04 //
+                                    PRIORITY ]</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 relative">
+                        <div class="absolute -top-12 -left-8 text-ice-blue/10 font-header text-9xl pointer-events-none select-none"
+                            aria-hidden="true">"</div>
+                        <blockquote class="relative">
+                            <p class="font-header text-2xl md:text-3xl text-on-surface leading-tight tracking-tight uppercase"
+                                style="font-weight: 450;">Nobody tells you what it's like to watch <span
+                                    class="text-ice-blue">Earthrise</span> from a refinery floor. Nobody tells you about
+                                the silence either, and how loud it gets.</p>
+                            <div class="mt-8 flex items-center gap-6">
+                                <div class="h-px flex-1 bg-gradient-to-r from-ice-blue/40 to-transparent"></div>
+                                <p class="font-body-content text-on-surface-variant italic text-lg ml-auto text-right">
+                                    <span
+                                        class="font-mono-tech text-[12px] font-bold tracking-[3.6px] uppercase text-sulfur-glow">—
+                                        Mara Aldenh, Extraction Engineer</span>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <div class="lg:col-span-3 flex flex-col gap-6">
+                        <div class="border-l-2 border-sulfur-glow pl-6 py-2">
+                            <div class="font-mono-tech text-[10px] text-ice-blue/40 uppercase mb-1">ORIGIN_NODE</div>
+                            <div class="font-mono-tech text-xs text-on-surface tracking-widest">TRANQUILITY_BASIN_REF01
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div
+                                class="bg-surface-container-high/40 backdrop-blur-sm p-4 border border-outline-variant/20">
+                                <div class="font-mono-tech text-[9px] text-ice-blue/40 uppercase">SIGNAL</div>
+                                <div class="font-bold font-mono-tech text-sm animate-flicker text-ice-blue"
+                                    id="signal-status" aria-live="polite">STABLE</div>
+                            </div>
+                            <div
+                                class="bg-surface-container-high/40 backdrop-blur-sm p-4 border border-outline-variant/20">
+                                <div class="font-mono-tech text-[9px] text-ice-blue/40 uppercase">PACKET</div>
+                                <div class="text-ice-blue font-bold font-mono-tech text-sm"><span id="packet-value"
+                                        aria-live="polite">97</span>%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="absolute inset-0 pointer-events-none opacity-5 bg-[linear-gradient(transparent_0%,rgba(178,242,250,0.1)_50%,transparent_100%)] bg-[length:100%_4px]">
+            </div>
+        </section>
+
+        <!-- Careers Section -->
+        <section
+            class="relative py-24 border-b border-void-black reveal overflow-hidden bg-surface-container-low active"
+            id="careers">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="max-w-container-max mx-auto relative z-10">
+                    <div class="mb-16">
+                        <div class="font-mono-tech text-xs text-ice-blue uppercase mb-4 tracking-widest">CAREERS</div>
+                        <h2 class="font-header text-3xl md:text-4xl text-on-surface uppercase mb-8 decode-text"
+                            data-decode-type="heading" style="font-weight: 450;">Join the extraction.</h2>
+                        <p class="font-body-content text-lg text-on-surface-variant max-w-3xl leading-relaxed">Not
+                            everyone is built for four hundred thousand kilometers of commute. If you are, we're hiring
+                            across three departments, on-site and Earth-side.</p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-8">
+                        <div class="card-container group transition-colors border border-outline-variant/30">
+                            <div
+                                class="card-inner relative p-8 flex flex-col lg:flex-row gap-8 items-start lg:items-center">
+                                <div
+                                    class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div class="flex-1 space-y-4">
+                                    <div class="flex flex-col md:flex-row md:items-center gap-4"><span
+                                            class="font-mono-tech text-[10px] text-ice-blue bg-surface-variant px-2 py-1 uppercase tracking-widest font-bold">SYS_ENG_LNO</span><span
+                                            class="font-mono-tech text-[10px] text-on-surface-variant uppercase tracking-wider">Tranquility
+                                            Basin · Information Technology</span></div>
+                                    <h3 class="font-header text-2xl text-on-surface uppercase decode-text"
+                                        data-decode-type="heading" style="font-weight: 450;">Systems Engineer, Lunar
+                                        Network Operations</h3>
+                                    <p
+                                        class="font-body-content text-sm text-on-surface-variant leading-relaxed max-w-4xl">
+                                        Keep the network that keeps three extraction sites talking to each other and to
+                                        Earth. You'll own uptime for autonomous rover coordination systems.</p>
+                                </div>
+                                <div class="w-full lg:w-auto"><a
+                                        class="block w-full text-center bg-sulfur-glow text-void-black font-mono-tech text-xs px-10 py-5 uppercase font-bold hover:bg-white hover:shadow-[0_0_25px_rgba(255,251,189,0.5)] transition-all duration-300 whitespace-nowrap"
+                                        href="#contact">Apply Now</a></div>
+                            </div>
+                        </div>
+                        <div class="card-container group transition-colors border border-outline-variant/30">
+                            <div
+                                class="card-inner relative p-8 flex flex-col lg:flex-row gap-8 items-start lg:items-center">
+                                <div
+                                    class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div class="flex-1 space-y-4">
+                                    <div class="flex flex-col md:flex-row md:items-center gap-4"><span
+                                            class="font-mono-tech text-[10px] text-ice-blue bg-surface-variant px-2 py-1 uppercase tracking-widest font-bold">ENG_STR_EXT</span><span
+                                            class="font-mono-tech text-[10px] text-on-surface-variant uppercase tracking-wider">Tranquility
+                                            Basin or Ocean of Storms · Engineering</span></div>
+                                    <h3 class="font-header text-2xl text-on-surface uppercase decode-text"
+                                        data-decode-type="heading" style="font-weight: 450;">Structural &amp; Extraction
+                                        Engineer</h3>
+                                    <p
+                                        class="font-body-content text-sm text-on-surface-variant leading-relaxed max-w-4xl">
+                                        Design and maintain the sintering refineries and mass-driver extraction rigs
+                                        that turn regolith into revenue. Trusted with equipment that has no service
+                                        manual.</p>
+                                </div>
+                                <div class="w-full lg:w-auto"><a
+                                        class="block w-full text-center bg-sulfur-glow text-void-black font-mono-tech text-xs px-10 py-5 uppercase font-bold hover:bg-white hover:shadow-[0_0_25px_rgba(255,251,189,0.5)] transition-all duration-300 whitespace-nowrap"
+                                        href="#contact">Apply Now</a></div>
+                            </div>
+                        </div>
+                        <div class="card-container group transition-colors border border-outline-variant/30">
+                            <div
+                                class="card-inner relative p-8 flex flex-col lg:flex-row gap-8 items-start lg:items-center">
+                                <div
+                                    class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                                </div>
+                                <div class="flex-1 space-y-4">
+                                    <div class="flex flex-col md:flex-row md:items-center gap-4"><span
+                                            class="font-mono-tech text-[10px] text-ice-blue bg-surface-variant px-2 py-1 uppercase tracking-widest font-bold">SEC_PRO_AST</span><span
+                                            class="font-mono-tech text-[10px] text-on-surface-variant uppercase tracking-wider">All
+                                            Active Sites · Security</span></div>
+                                    <h3 class="font-header text-2xl text-on-surface uppercase decode-text"
+                                        data-decode-type="heading" style="font-weight: 450;">Security Officer, Perimeter
+                                        &amp; Asset Protection</h3>
+                                    <p
+                                        class="font-body-content text-sm text-on-surface-variant leading-relaxed max-w-4xl">
+                                        Protect KVE personnel, equipment, and product across facilities operating well
+                                        outside any jurisdiction that can send backup.</p>
+                                </div>
+                                <div class="w-full lg:w-auto"><a
+                                        class="block w-full text-center bg-sulfur-glow text-void-black font-mono-tech text-xs px-10 py-5 uppercase font-bold hover:bg-white hover:shadow-[0_0_25px_rgba(255,251,189,0.5)] transition-all duration-300 whitespace-nowrap"
+                                        href="#contact">Apply Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety Section -->
+        <section class="relative py-24 border-b border-void-black reveal overflow-hidden bg-surface active"
+            id="sustainability">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="max-w-container-max mx-auto relative z-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:items-center">
+                        <div class="lg:col-span-7 space-y-8 flex flex-col justify-center">
+                            <div class="font-mono-tech text-xs text-ice-blue uppercase mb-4 tracking-widest">SAFETY
+                            </div>
+                            <h2 class="font-header text-3xl md:text-4xl text-on-surface uppercase mb-8 decode-text"
+                                data-decode-type="heading" style="font-weight: 450;">Safety as <span
+                                    class="text-sulfur-glow">seriously</span><br>as ore.</h2>
+                            <div class="space-y-6 font-body-content text-base text-on-surface-variant leading-relaxed">
+                                <p class="">Kessler-Voss maintains the industry's most comprehensive off-world safety
+                                    program. Every facility runs redundant life support, mandatory EVA buddy protocols,
+                                    and real-time biometric monitoring for every person on-site. We are also honest
+                                    about what "safety" means at this frontier. Lunar extraction remains dangerous work.
+                                    We do not minimize that; we hire for it, train for it, and compensate for it.</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5">
+                            <div class="card-container group border border-outline-variant/30">
+                                <div class="card-inner relative p-8 flex flex-col">
+                                    <div
+                                        class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                                    </div>
+                                    <div
+                                        class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                                    </div>
+                                    <div
+                                        class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                                    </div>
+                                    <div
+                                        class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                                    </div>
+                                    <div class="relative z-10">
+                                        <div
+                                            class="font-mono-tech text-[10px] text-ice-blue uppercase tracking-[0.3em] mb-8 flex items-center gap-2">
+                                            <span class="material-symbols-outlined text-sm"
+                                                aria-hidden="true">analytics</span> LUNAR_SAFETY_INDEX_V4.2
+                                        </div>
+                                        <div class="flex items-baseline mb-2"><span
+                                                class="text-7xl md:text-8xl font-header text-on-surface font-bold tracking-tighter"
+                                                style="font-weight: 450;">97.9</span><span
+                                                class="text-3xl font-mono-tech text-secondary ml-4">%</span></div>
+                                        <div
+                                            class="font-mono-tech text-xs text-secondary uppercase tracking-widest font-bold mb-8">
+                                            Incidents resolved without injury</div>
+                                        <div class="space-y-3 border-t border-outline-variant pt-6">
+                                            <div
+                                                class="flex justify-between font-mono-tech text-[10px] text-regolith-light">
+                                                <span class="">FISCAL YEAR TO DATE</span><span class="text-ice-blue">[
+                                                    VALIDATED ]</span>
+                                            </div>
+                                            <div class="w-full bg-surface-variant h-1.5">
+                                                <div class="bg-ice-blue h-full" style="width: 97.9%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="relative py-24 reveal overflow-hidden bg-surface-container-low active" id="contact">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="max-w-container-max mx-auto relative z-10">
+                    <div class="mb-12 text-center mx-auto">
+                        <div class="font-mono-tech text-xs text-ice-blue uppercase mb-4 tracking-widest">CONTACT</div>
+                        <h2 class="font-header text-3xl md:text-4xl text-on-surface uppercase mb-8 decode-text"
+                            data-decode-type="heading" style="font-weight: 450;">Get on the manifest.</h2>
+                        <p class="font-body-content text-lg text-on-surface-variant max-w-2xl text-center mx-auto">Route
+                            to the right department. We respond within five Earth days.</p>
+                    </div>
+                    <div class="card-container group border border-outline-variant/30 max-w-4xl mx-auto">
+                        <div class="card-inner relative p-8 md:p-12">
+                            <div
+                                class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -top-1 -right-1 w-4 h-4 border-t border-r border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -bottom-1 -left-1 w-4 h-4 border-b border-l border-ice-blue pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-ice-blue pointer-events-none">
+                            </div>
+                            <form id="manifest-form" novalidate class="space-y-8">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                                    <div class="space-y-3 form-group"><label for="full-name"
+                                            class="font-mono-tech text-ice-blue uppercase text-[10px] font-bold tracking-widest">[01]
+                                            Full Name *</label><input id="full-name" name="full-name"
+                                            autocomplete="name" required aria-describedby="full-name-error"
+                                            aria-invalid="false"
+                                            class="w-full border border-outline-variant text-on-surface font-mono-tech text-base sm:text-xs p-4 focus:border-ice-blue focus:ring-1 focus:ring-ice-blue focus:outline-none transition-colors bg-surface-container-low/40 placeholder:text-on-surface-variant text-sm"
+                                            placeholder="Surname, Given" type="text"><span id="full-name-error"
+                                            class="error-message hidden" aria-live="polite"></span></div>
+                                    <div class="space-y-3 form-group"><label for="email-address"
+                                            class="font-mono-tech text-ice-blue uppercase text-[10px] font-bold tracking-widest">[02]
+                                            Email Address *</label><input id="email-address" name="email-address"
+                                            autocomplete="email" required aria-describedby="email-address-error"
+                                            aria-invalid="false"
+                                            class="w-full border border-outline-variant text-on-surface font-mono-tech text-base sm:text-xs p-4 focus:border-ice-blue focus:ring-1 focus:ring-ice-blue focus:outline-none transition-colors bg-surface-container-low/40 placeholder:text-on-surface-variant text-sm"
+                                            placeholder="comms@domain.ext" type="email"><span id="email-address-error"
+                                            class="error-message hidden" aria-live="polite"></span></div>
+                                </div>
+                                <div class="space-y-3 form-group"><label for="area-of-interest"
+                                        class="font-mono-tech text-ice-blue uppercase text-[10px] font-bold tracking-widest">[03]
+                                        Area of Interest *</label>
+                                    <div class="relative"><select id="area-of-interest" name="area-of-interest" required
+                                            aria-describedby="area-of-interest-error" aria-invalid="false"
+                                            class="w-full border border-outline-variant text-on-surface font-mono-tech p-4 pr-10 focus:border-ice-blue focus:ring-1 focus:ring-ice-blue focus:outline-none transition-colors appearance-none bg-surface-container-low/40 cursor-pointer  text-sm">
+                                            <option value="">-- Select Area --</option>
+                                            <option value="Engineering">Engineering</option>
+                                            <option value="Information Technology">Information Technology</option>
+                                            <option value="Security">Security</option>
+                                            <option value="Investor Relations">Investor Relations</option>
+                                            <option value="General Inquiry">General Inquiry</option>
+                                        </select>
+                                    </div><span id="area-of-interest-error" class="error-message hidden"
+                                        aria-live="polite"></span>
+                                </div>
+                                <div class="space-y-3 form-group"><label for="message"
+                                        class="font-mono-tech text-ice-blue uppercase text-[10px] font-bold tracking-widest">[04]
+                                        Message (Optional)</label><textarea id="message" name="message"
+                                        class="w-full border border-outline-variant text-on-surface font-mono-tech text-base sm:text-xs p-4 h-32 focus:border-ice-blue focus:ring-1 focus:ring-ice-blue focus:outline-none transition-colors bg-surface-container-low/40 placeholder:text-on-surface-variant text-sm"
+                                        placeholder="Enter transmission details..."></textarea></div>
+                                <div class="space-y-6">
+                                    <button
+                                        class="bg-sulfur-glow text-void-black font-mono-tech text-sm py-5 uppercase font-bold hover:bg-white hover:shadow-[0_0_30px_rgba(255,251,189,0.6)] transition-all duration-300 tracking-widest max-w-md mx-auto block px-12"
+                                        type="submit">Submit Manifest Request</button>
+                                    <p
+                                        class="pt-2 font-mono-tech text-[9px] text-regolith-light text-center leading-tight uppercase tracking-wider max-w-md mx-auto">
+                                        By submitting, you consent to KVE retaining your information. Applicants for
+                                        off-world roles will be contacted regarding physical and psychological fitness
+                                        screening.</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Accessible Confirmation Modal -->
+    <dialog id="submission-modal" aria-labelledby="modal-title" aria-describedby="modal-desc"
+        class="bg-surface-container-high text-on-surface border border-ice-blue p-8 md:p-12 max-w-lg w-full shadow-2xl">
+        <div class="flex flex-col items-center text-center space-y-6">
+            <span class="material-symbols-outlined text-sulfur-glow text-5xl" aria-hidden="true">check_circle</span>
+            <h3 id="modal-title" class="font-header text-2xl uppercase tracking-wider text-ice-blue"
+                style="font-weight: 450;">Transmission Received</h3>
+            <p id="modal-desc" class="font-body-content text-sm text-on-surface-variant leading-relaxed">
+                Your manifest request has been recorded in the Kessler-Voss communications ledger. Our team will verify
+                credentials and respond within five Earth days.
+            </p>
+            <button id="modal-close-btn" type="button"
+                class="bg-sulfur-glow text-void-black font-mono-tech text-xs px-8 py-4 uppercase font-bold hover:bg-white transition-all duration-200">
+                Acknowledge & Close
+            </button>
+        </div>
+    </dialog>
+
+    <footer class="relative bg-background border-t border-surface-variant overflow-hidden">
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <img alt="Lunar Landscape horizon" class="w-full h-full object-cover opacity-40 grayscale" loading="lazy"
+                width="1672" height="941" src="/assets/footer-background.webp">
+            <div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40"></div>
+        </div>
+        <div class="max-w-container-max mx-auto pt-24 pb-12 px-margin-mobile md:px-margin-desktop relative z-10">
+            <div class="flex flex-col md:flex-row justify-between gap-12 mb-20">
+                <div>
+                    <span class="font-header text-3xl text-on-surface font-bold tracking-[0.2em] block mb-2"
+                        style="font-weight: 450;">KESSLER-VOSS</span>
+                    <p class="font-mono-tech text-[10px] text-sulfur-glow uppercase tracking-[0.4em] font-bold">
+                        Now Extracting Tomorrow</p>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+                    <div class="flex flex-col gap-4">
+                        <span
+                            class="font-mono-tech text-on-surface-variant uppercase text-[10px] mb-2 font-bold tracking-widest opacity-60">Division</span>
+                        <a class="font-mono-tech text-[10px] text-regolith-light hover:text-ice-blue uppercase tracking-wider transition-colors"
+                            href="#mission">Mission</a>
+                        <a class="font-mono-tech text-[10px] text-regolith-light hover:text-ice-blue uppercase tracking-wider transition-colors"
+                            href="#resources">Resources</a>
+                        <a class="font-mono-tech text-[10px] text-regolith-light hover:text-ice-blue uppercase tracking-wider transition-colors"
+                            href="#operations">Operations</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span
+                            class="font-mono-tech text-on-surface-variant uppercase text-[10px] mb-2 font-bold tracking-widest opacity-60">Corporate</span>
+                        <a class="font-mono-tech text-[10px] text-regolith-light hover:text-ice-blue uppercase tracking-wider transition-colors"
+                            href="#careers">Careers</a>
+                        <a class="font-mono-tech text-[10px] text-regolith-light hover:text-ice-blue uppercase tracking-wider transition-colors"
+                            href="#sustainability">Safety</a>
+                        <a class="font-mono-tech text-[10px] text-regolith-light hover:text-ice-blue uppercase tracking-wider transition-colors"
+                            href="#">Investors</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span
+                            class="font-mono-tech text-on-surface-variant uppercase text-[10px] mb-2 font-bold tracking-widest opacity-60">Legal</span>
+                        <a class="font-mono-tech text-[10px] text-regolith-light hover:text-ice-blue uppercase tracking-wider transition-colors"
+                            href="#contact">Contact</a>
+                        <a class="font-mono-tech text-[10px] text-regolith-light hover:text-ice-blue uppercase tracking-wider transition-colors"
+                            href="#">Legal</a>
+                        <a class="font-mono-tech text-[10px] text-regolith-light hover:text-ice-blue uppercase tracking-wider transition-colors"
+                            href="#">Privacy</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border-t border-outline-variant/30 pt-12 flex flex-col md:flex-row justify-between items-center gap-8">
+                <p
+                    class="font-mono-tech text-[9px] text-regolith-light max-w-2xl text-center md:text-left leading-relaxed">
+                    Kessler-Voss Extractive is a registered off-world resource concern operating under cislunar
+                    commercial extraction license. All imagery representative. Employment in off-world roles carries
+                    inherent risk; full disclosure provided during onboarding.</p>
+                <p class="font-mono-tech text-[9px] text-regolith-light whitespace-nowrap uppercase tracking-widest">©
+                    Kessler-Voss Extractive. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
